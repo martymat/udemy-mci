@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BoQMnIerSVjC5ZwhooQ9HVTvd0Z4Bhs/ZAntE9DBUFehqwnAD2QF8fHQ0ADGPxizH6PTSnFszO88dTeGO0RQcA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marty\\Documents\\coding\\udemy-mci\\udemy-mci\\udemy-mci\\udemy-mci.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marty\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Marty\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Marty\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Marty\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
