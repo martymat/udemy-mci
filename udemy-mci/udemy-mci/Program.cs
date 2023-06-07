@@ -7,7 +7,7 @@ namespace udemy_mci
     {
         static void Main(string[] args)
         {
-            ReverseString.Test();
+            ReverseString.Reverse();
         }
     }
 }
