@@ -1,4 +1,5 @@
 ﻿using System;
+using udemy_mci.Hashes;
 
 namespace udemy_mci
 {
@@ -6,7 +7,7 @@ namespace udemy_mci
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HashSet.FindFirstReoccuringCharacter();
         }
     }
 }
