@@ -8,10 +8,16 @@ namespace udemy_mci
         static void Main(string[] args)
         {
             //ReverseString.Reverse();
+
             //MergeArrays.Merge();
+
             //HashSet.FindFirstReoccuringCharacter();
-            var linkedList = new LinkedList(5);
-            linkedList.ReverseSinglyLinkedList();
+
+            //var linkedList = new LinkedListTester(5);
+            //linkedList.ReverseSinglyLinkedList();
+
+            var stackByLinkedListTester = new StackByLinkedListTester(5);
+            stackByLinkedListTester.TestStackByLinkedList();
         }
     }
 }

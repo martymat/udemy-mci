@@ -4,18 +4,18 @@ using System.Text;
 
 namespace udemy_mci.DataStructures
 {
-    public class LinkedList
+    public class LinkedListTester
     {
         private int _multiples;
 
-        public LinkedList(int multiples)
+        public LinkedListTester(int multiples)
         {
             _multiples = multiples;
         }
 
         public SinglyLinkedList<int> GenerateAndGetSinglyLinkedList()
         {
-            SinglyLinkedList<int> linkedList = new SinglyLinkedList<int>();
+            var linkedList = new SinglyLinkedList<int>();
             int data = 0;
             // Add 5 nodes to the linked list
             for (int i = 0; i < 5; i++)
