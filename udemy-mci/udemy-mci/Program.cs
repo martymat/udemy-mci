@@ -10,7 +10,8 @@ namespace udemy_mci
             //ReverseString.Reverse();
             //MergeArrays.Merge();
             //HashSet.FindFirstReoccuringCharacter();
-            var linkedList = new LinkedList(8);
+            var linkedList = new LinkedList(5);
+            linkedList.ReverseSinglyLinkedList();
         }
     }
 }

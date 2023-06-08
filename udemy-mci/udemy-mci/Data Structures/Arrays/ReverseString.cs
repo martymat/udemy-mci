@@ -4,7 +4,6 @@ using System.Text;
 
 namespace udemy_mci.DataStructures
 {
-{
     public class ReverseString
     {
         private const string stringToReverse = "racecar";

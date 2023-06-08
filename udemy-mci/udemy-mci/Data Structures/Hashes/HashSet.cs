@@ -4,7 +4,6 @@ using System.Text;
 
 namespace udemy_mci.DataStructures
 {
-{
     class HashSet
     {
         // test case 1

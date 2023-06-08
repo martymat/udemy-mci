@@ -5,7 +5,6 @@ using System.Collections;
 
 namespace udemy_mci.DataStructures
 {
-{
     class MergeArrays
     {
         // test case 1

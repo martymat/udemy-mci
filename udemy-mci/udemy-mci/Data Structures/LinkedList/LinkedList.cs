@@ -16,11 +16,11 @@ namespace udemy_mci.DataStructures
         public SinglyLinkedList<int> GenerateAndGetSinglyLinkedList()
         {
             SinglyLinkedList<int> linkedList = new SinglyLinkedList<int>();
-            int data = _multiples;
-            // Add 5 random nodes to the linked list
+            int data = 0;
+            // Add 5 nodes to the linked list
             for (int i = 0; i < 5; i++)
             {
-                data += 5;
+                data += _multiples;
                 linkedList.Append(data);
             }
 
@@ -30,8 +30,15 @@ namespace udemy_mci.DataStructures
         public void ReverseSinglyLinkedList()
         {
             var linkedListToReverse = GenerateAndGetSinglyLinkedList();
+            linkedListToReverse.Reverse();
 
-
+            // Print the linked list
+            LinkedListNode<int> currentNode = linkedListToReverse.GetHead();
+            while (currentNode != null)
+            {
+                Console.WriteLine(currentNode.Data);
+                currentNode = currentNode.Next;
+            }
         }
     }
 }
