@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace udemy_mci.Arrays
+namespace udemy_mci.DataStructures
+{
 {
     public class ReverseString
     {

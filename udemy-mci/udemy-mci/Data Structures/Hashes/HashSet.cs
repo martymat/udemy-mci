@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace udemy_mci.Hashes
+namespace udemy_mci.DataStructures
+{
 {
     class HashSet
     {
