@@ -1,6 +1,5 @@
 ﻿using System;
-using udemy_mci.Arrays;
-using udemy_mci.Hashes;
+using udemy_mci.DataStructures;
 
 namespace udemy_mci
 {
@@ -10,7 +9,9 @@ namespace udemy_mci
         {
             //ReverseString.Reverse();
             //MergeArrays.Merge();
-            HashSet.FindFirstReoccuringCharacter();
+            //HashSet.FindFirstReoccuringCharacter();
+            var linkedList = new LinkedList(5);
+            linkedList.ReverseSinglyLinkedList();
         }
     }
 }

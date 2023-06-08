@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Collections;
 
-namespace udemy_mci.Arrays
+namespace udemy_mci.DataStructures
 {
     class MergeArrays
     {
