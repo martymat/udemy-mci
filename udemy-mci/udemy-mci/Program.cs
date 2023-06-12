@@ -16,8 +16,12 @@ namespace udemy_mci
             //var linkedList = new LinkedListTester(5);
             //linkedList.ReverseSinglyLinkedList();
 
-            var stackByLinkedListTester = new StackByLinkedListTester(5);
-            stackByLinkedListTester.TestStackByLinkedList();
+            //var stackByLinkedListTester = new StackByLinkedListTester(5);
+            //stackByLinkedListTester.TestStackByLinkedList();
+
+            //BinarySearchTreeTester.TestBinarySearchTree();
+
+            //GraphTester.GenerateAndPrintGraph();
         }
     }
 }
