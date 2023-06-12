@@ -27,8 +27,18 @@ namespace udemy_mci
             //Factorial.FactorialIterative(5);
             //Console.WriteLine(Factorial.FactorialRecursive(5));
 
-           // Fibonacci.FibonacciIterative(7);
-            Console.WriteLine(Fibonacci.FibonacciRecursive(7, "top"));
+            //Fibonacci.FibonacciIterative(7);
+            //Console.WriteLine(Fibonacci.FibonacciRecursive(7, "top"));
+
+            //BubbleSort.Sort();
+
+            //SelectionSort.Sort();
+
+            //InsertionSort.Sort();
+
+            //MergeSort.SortTest();
+
+            QuickSort.SortTest();
         }
     }
 }
