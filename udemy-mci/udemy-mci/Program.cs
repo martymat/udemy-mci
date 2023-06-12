@@ -1,5 +1,6 @@
 ﻿using System;
 using udemy_mci.DataStructures;
+using udemy_mci.Algorithms;
 
 namespace udemy_mci
 {
@@ -22,6 +23,12 @@ namespace udemy_mci
             //BinarySearchTreeTester.TestBinarySearchTree();
 
             //GraphTester.GenerateAndPrintGraph();
+
+            //Factorial.FactorialIterative(5);
+            //Console.WriteLine(Factorial.FactorialRecursive(5));
+
+           // Fibonacci.FibonacciIterative(7);
+            Console.WriteLine(Fibonacci.FibonacciRecursive(7, "top"));
         }
     }
 }
