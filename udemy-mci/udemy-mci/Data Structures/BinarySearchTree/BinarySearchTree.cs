@@ -13,7 +13,7 @@ namespace udemy_mci.DataStructures
         
         */
 
-        private Node root;
+        public Node root;
 
         public BinarySearchTree()
         {

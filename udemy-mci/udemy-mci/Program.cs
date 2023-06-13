@@ -38,7 +38,11 @@ namespace udemy_mci
 
             //MergeSort.SortTest();
 
-            QuickSort.SortTest();
+            //QuickSort.SortTest();
+
+            //BreadthFirstSearch.BreadthFirstSearchTester();
+
+            DepthFirstSearch.DepthFirstSearchTester();
         }
     }
 }
