@@ -1,6 +1,8 @@
 ﻿using System;
 using udemy_mci.DataStructures;
 using udemy_mci.Algorithms;
+using udemy_mci.DynamicProgramming;
+using System.Diagnostics;
 
 namespace udemy_mci
 {
@@ -26,8 +28,6 @@ namespace udemy_mci
 
             //Factorial.FactorialIterative(5);
             //Console.WriteLine(Factorial.FactorialRecursive(5));
-
-            //Fibonacci.FibonacciIterative(7);
             //Console.WriteLine(Fibonacci.FibonacciRecursive(7, "top"));
 
             //BubbleSort.Sort();
@@ -42,7 +42,19 @@ namespace udemy_mci
 
             //BreadthFirstSearch.BreadthFirstSearchTester();
 
-            DepthFirstSearch.DepthFirstSearchTester();
+            //DepthFirstSearch.DepthFirstSearchTester();
+
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
+            Console.WriteLine(Fibonacci.FibonacciRecursive(40, "top"));
+            stopWatch.Stop();
+            Console.WriteLine("regular time: " + stopWatch.ElapsedMilliseconds);
+
+            stopWatch.Reset();
+            stopWatch.Start();
+            Console.WriteLine(Memoization.Fibonacci(40));
+            stopWatch.Stop();
+            Console.WriteLine("memoization time: " + stopWatch.ElapsedMilliseconds);
         }
     }
 }
