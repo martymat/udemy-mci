@@ -10,15 +10,14 @@ namespace udemy_mci.Algorithms
 
         /// <summary>
         /// loop through array with nested loops
-        ///     compare arrayToSort[i] to arrayToSort[j]
-        ///     if greater, swap and increment i and j
-        ///     if not greater, increment i and j
+        ///     compare arrayToSort[j] to arrayToSort[j+1]
+        ///     if greater, swap and increment arrayToSort[j] and arrayToSort[j+1]
         /// </summary>
         public static void Sort()
         {
-            for (int i = 0; i < arrayToSort.Length - 1; i++)
+            for (int i = 0; i < arrayToSort.Length; i++)
             {
-                for (int j = 0; j < arrayToSort.Length - i - 1; j++)
+                for (int j = 0; j < arrayToSort.Length - i; j++)
                 {
                     if (arrayToSort[j] > arrayToSort[j + 1])
                     {

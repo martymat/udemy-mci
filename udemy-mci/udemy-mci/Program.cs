@@ -37,24 +37,26 @@ namespace udemy_mci
             //InsertionSort.Sort();
 
             //MergeSort.SortTest();
+            //MergeSort2.merge_sort().ForEach(x => Console.Write(x + " "));
 
             //QuickSort.SortTest();
+            QuickSort2.SortTest();
 
             //BreadthFirstSearch.BreadthFirstSearchTester();
 
             //DepthFirstSearch.DepthFirstSearchTester();
 
-            var stopWatch = new Stopwatch();
-            stopWatch.Start();
-            Console.WriteLine(Fibonacci.FibonacciRecursive(40, "top"));
-            stopWatch.Stop();
-            Console.WriteLine("regular time: " + stopWatch.ElapsedMilliseconds);
+            //var stopWatch = new Stopwatch();
+            //stopWatch.Start();
+            //Console.WriteLine(Fibonacci.FibonacciRecursive(40, "top"));
+            //stopWatch.Stop();
+            //Console.WriteLine("regular time: " + stopWatch.ElapsedMilliseconds);
 
-            stopWatch.Reset();
-            stopWatch.Start();
-            Console.WriteLine(Memoization.Fibonacci(40));
-            stopWatch.Stop();
-            Console.WriteLine("memoization time: " + stopWatch.ElapsedMilliseconds);
+            //stopWatch.Reset();
+            //stopWatch.Start();
+            //Console.WriteLine(Memoization.Fibonacci(40));
+            //stopWatch.Stop();
+            //Console.WriteLine("memoization time: " + stopWatch.ElapsedMilliseconds);
         }
     }
 }

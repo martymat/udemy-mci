@@ -7,6 +7,7 @@ namespace udemy_mci.Algorithms
     class InsertionSort
     {
         private static int[] arrayToSort = new int[8] { 2, 5, 3, 1, 8, 7, 6, 4 };
+        // { 1, 2, 4, 5, 6, 7, 8, 3 };
 
         public static void Sort()
         {
