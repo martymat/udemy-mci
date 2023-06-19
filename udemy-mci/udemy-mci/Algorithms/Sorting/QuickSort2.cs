@@ -37,7 +37,7 @@ namespace udemy_mci.Algorithms
             Random random = new Random();
             var pivotIndex = random.Next(startIndex, endIndex);
 
-            Swap(arr, startIndex, pivotIndex);
+            SwapHelper.Swap(arr, startIndex, pivotIndex);
 
             for (; bigIndex <= endIndex; bigIndex++)
             {
@@ -45,21 +45,14 @@ namespace udemy_mci.Algorithms
                 {
                     smallIndex++;
 
-                    Swap(arr, smallIndex, bigIndex);
+                    SwapHelper.Swap(arr, smallIndex, bigIndex);
                 }
             }
 
-            Swap(arr, startIndex, smallIndex);
+            SwapHelper.Swap(arr, startIndex, smallIndex);
 
             PartitionHelper(arr, startIndex, smallIndex - 1);
             PartitionHelper(arr, smallIndex + 1, endIndex);
-        }
-
-        private static void Swap(List<int> arr, int index1, int index2)
-        {
-            int temp = arr[index1];
-            arr[index1] = arr[index2];
-            arr[index2] = temp;
         }
     }
 }

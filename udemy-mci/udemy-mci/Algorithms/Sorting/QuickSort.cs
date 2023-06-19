@@ -39,19 +39,12 @@ namespace udemy_mci.Algorithms
                 if (arr[j] < pivot)
                 {
                     i++;
-                    Swap(arr, i, j);  // Swap elements at positions i and j
+                    SwapHelper.Swap(arr, i, j);  // SwapHelper.Swap elements at positions i and j
                 }
             }
 
-            Swap(arr, i + 1, high);   // Swap the pivot element with the element at i + 1
+            SwapHelper.Swap(arr, i + 1, high);   // SwapHelper.Swap the pivot element with the element at i + 1
             return i + 1;             // Return the updated pivot index
-        }
-
-        private static void Swap(int[] arr, int i, int j)
-        {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
         }
     }
 }

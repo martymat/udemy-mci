@@ -40,7 +40,12 @@ namespace udemy_mci
             //MergeSort2.merge_sort().ForEach(x => Console.Write(x + " "));
 
             //QuickSort.SortTest();
-            QuickSort2.SortTest();
+            //QuickSort2.SortTest();
+
+            //HeapSort.SortTest();
+
+            CountingSort.SortTest();
+            //CountingSort.SortTest2();
 
             //BreadthFirstSearch.BreadthFirstSearchTester();
 
