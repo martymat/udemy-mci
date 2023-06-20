@@ -12,30 +12,38 @@ namespace udemy_mci.Algorithms
 
         public static void SortTest()
         {
-            var arr = new List<int> { 1, 0, 3, 1, 3, 1 };
+            var arr = new List<int> { 21, 345, 13, 101, 50, 234, 1 };
             var max = arr.Max();
 
             // Perform counting sort for each digit, starting from the least significant digit to the most significant digit
-            for (int exp = 1; max / exp > 0; exp *= 10)
-                CountingSort(arr, arr.Count, exp);
+            for (int position = 1; max / position > 0; position *= 10)
+                CountingSort(arr, arr.Count, position);
 
             foreach (var number in arr)
                 Console.WriteLine(number + " ");
         }
 
-        public static void CountingSort(List<int> arr, int length, int exp)
+        public static void CountingSort(List<int> arr, int length, int position)
         {
-            var frequency = new Dictionary<int, int>();
+            var frequency = new Dictionary<int, List<int>>();
+            int digit;
 
-            var min = arr.Min();
-            var max = arr.Max();
+            var min = 0;
+            var max = 10;
 
-            for (int i = 0; i < arr.Count; i++)
+            for (int i = 0; i < length; i++)
             {
-                if (!frequency.ContainsKey(arr[i]))
-                    frequency.Add(arr[i], 1);
+                digit = DigitAtPosition(arr[i], position);
+
+                if (!frequency.ContainsKey(digit))
+                {
+                    var values = new List<int>() { arr[i] };
+                    frequency.Add(digit, values);
+                }
                 else
-                    frequency[arr[i]]++;
+                {
+                    frequency[digit].Add(arr[i]);
+                }
             }
 
             int arr_index = 0;
@@ -43,44 +51,17 @@ namespace udemy_mci.Algorithms
             {
                 if (frequency.ContainsKey(i))
                 {
-                    var current_frequency = frequency[i];
-                    while (current_frequency > 0)
+                    foreach (var value in frequency[i])
                     {
-                        arr[arr_index++] = i;
-
-                        current_frequency--;
+                        arr[arr_index++] = value;
                     }
                 }
             }
         }
 
-        public static void CountingSort2(List<int> list, int length, int exp)
+        public static int DigitAtPosition(int Number, int Position)
         {
-            List<int> output = new List<int>(new int[length]);
-            int[] count = new int[10];
-
-            // Initialize the count array with all zeros
-            for (int i = 0; i < 10; i++)
-                count[i] = 0;
-
-            // Store the count of each digit at their respective index in the count array
-            for (int i = 0; i < length; i++)
-                count[(list[i] / exp) % 10]++;
-
-            // Change count[i] so that count[i] contains the actual position of this digit in the output array
-            for (int i = 1; i < 10; i++)
-                count[i] += count[i - 1];
-
-            // Build the output array by placing each element in its corresponding position based on the current digit
-            for (int i = length - 1; i >= 0; i--)
-            {
-                output[count[(list[i] / exp) % 10] - 1] = list[i];
-                count[(list[i] / exp) % 10]--;
-            }
-
-            // Copy the output array to the original list, so that the list contains the sorted elements based on the current digit
-            for (int i = 0; i < length; i++)
-                list[i] = output[i];
+            return ((Number / Position) % 10);
         }
     }
 }

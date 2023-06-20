@@ -44,8 +44,10 @@ namespace udemy_mci
 
             //HeapSort.SortTest();
 
-            CountingSort.SortTest();
+            //CountingSort.SortTest();
             //CountingSort.SortTest2();
+
+            RadixSort.SortTest();
 
             //BreadthFirstSearch.BreadthFirstSearchTester();
 

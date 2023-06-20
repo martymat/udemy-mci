@@ -7,7 +7,7 @@ namespace udemy_mci.Algorithms
 {
     public class CountingSort
     {
-        private static List<int> arr = new List<int> { 1, 0, 3, 1, 3, 1 };
+        private static List<int> arr = new List<int> { 21, 345, 13, 101, 50, 234, 1 };
         //private static List<int> arr = new List<int> { -400000 };
 
         public static void SortTest()
